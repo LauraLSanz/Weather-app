@@ -110,7 +110,7 @@ h6 {
   display: block;
   text-align: center;
   position: relative;
-  top: -19px;
+  top: -15px;
   left: 438px;
   font-size: 12px;
 }
@@ -149,4 +149,10 @@ h6 {
   display: inline-block;
   top: -67px;
   left: 82px;
+}
+
+#netlifyLink {
+  display: block;
+  text-align: center;
+  margin: auto;
 }
