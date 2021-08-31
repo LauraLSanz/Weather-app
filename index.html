@@ -22,106 +22,104 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
 
-<link rel="stylesheet" href="src/styles.css"/>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
-
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container-fluid">
-      
+      <form id="search-form">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="city"
+          autofocus="on"
+          id="search-text-input"
+        />
+        <input type="submit" value="🔍" class="🔍" />
+      </form>
 
-        <form id="search-form">
-          <input
-          type= "text"
-            class="form-control"
-            placeholder="city"
-            autofocus="on"
-            id="search-text-input"
-          />
-         <input
-          type= "submit"
-          value= "🔍"
-          class= "🔍">
-        </form>
-        
-        <button id="currentlocation">Current Location</button>
-      
+      <button id="currentlocation">Current Location</button>
 
-        <h1 id="city">Mexico City</h1>
-        <h2 id="description">Partly Cloudy</h2>
-        <h3>
-          <i class="bi bi-cloud-sun"></i>
-        </h3>
-        
-        <h4 id="temp">24°</h4>
-       
+      <h1 id="city">Mexico City</h1>
+      <h2 id="description">Partly Cloudy</h2>
+      <h3>
+        <i class="bi bi-cloud-sun"></i>
+      </h3>
+
+      <h4 id="temp">24°</h4>
+
       <a href="#" class="btn" id="celsius-link" autofocus="on">C°</a>
       <a href="#" class="btn" id="farenheit-link">F°</a>
 
-        <h5 id="day">Sunday</h5>
-        <h6 id="time">5:00pm</h6>
-        <div class="sunrise">
-          <i class="bi bi-sunrise"></i>7:17am <i class="bi bi-sunset"></i>8:04pm
-        </div>
-        
+      <h5 id="day">Sunday</h5>
+      <h6 id="time">5:00pm</h6>
+      <div class="sunrise">
+        <i class="bi bi-sunrise"></i>7:17am <i class="bi bi-sunset"></i>8:04pm
+      </div>
 
-        <div class="precipitation">
-          <span class="humidity"><i class="bi bi-moisture"></i><span id="humidity">39%</span></span>
-          <span class="wind"><i class="bi bi-wind"></i><span id="windspeed">0km/h</span></span>
+      <div class="precipitation">
+        <span class="humidity"
+          ><i class="bi bi-moisture"></i><span id="humidity">39%</span></span
+        >
+        <span class="wind"
+          ><i class="bi bi-wind"></i><span id="windspeed">0km/h</span></span
+        >
+      </div>
+      <div class="box">
+        <div class="row days">
+          <div class="col-2"></div>
+          <div class="col-2"></div>
+          <div class="col-2 high">High</div>
+          <div class="col-2 low">Low</div>
+          <div class="col-2 rainChance"><i class="bi bi-cloud-rain"></i></div>
+          <div class="col-2 moon"><i class="bi bi-moon"></i></div>
         </div>
-        <div class="box">
-          <div class="row days">
-            <div class="col-2"></div>
-            <div class="col-2"></div>
-            <div class="col-2 high">High</div>
-            <div class="col-2 low">Low</div>
-            <div class="col-2 rainChance"><i class="bi bi-cloud-rain"></i></div>
-            <div class="col-2 moon"><i class="bi bi-moon"></i></div>
-          </div>
-          <div class="row">
-            <div class="col-2">Mon</div>
-            <div class="col-2"><i class="bi bi-cloud-sun"></i></div>
-            <div class="col-2">76°</div>
-            <div class="col-2">58°</div>
-            <div class="col-2">20%</div>
-            <div class="col-2"><i class="bi bi-circle-half"></i></div>
-          </div>
-          <div class="row">
-            <div class="col-2">Tue</div>
-            <div class="col-2"><i class="bi bi-cloud-lightning-rain"></i></div>
-            <div class="col-2">76°</div>
-            <div class="col-2">57°</div>
-            <div class="col-2">80%</div>
-            <div class="col-2"><i class="bi bi-circle-half"></i></div>
-          </div>
-          <div class="row">
-            <div class="col-2">Wed</div>
-            <div class="col-2"><i class="bi bi-cloud-lightning-rain"></i></div>
-            <div class="col-2">78°</div>
-            <div class="col-2">57°</div>
-            <div class="col-2">50%</div>
-            <div class="col-2"><i class="bi bi-circle-half"></i></div>
-          </div>
-          <div class="row">
-            <div class="col-2">Thu</div>
-            <div class="col-2"><i class="bi bi-cloud-lightning-rain"></i></div>
-            <div class="col-2">78°</div>
-            <div class="col-2">56°</div>
-            <div class="col-2">50%</div>
-            <div class="col-2"><i class="bi bi-circle-half"></i></div>
-          </div>
-          <div class="row">
-            <div class="col-2">Fri</div>
-            <div class="col-2"><i class="bi bi-cloud-lightning"></i></div>
-            <div class="col-2">76°</div>
-            <div class="col-2">55°</div>
-            <div class="col-2">30%</div>
-            <div class="col-2"><i class="bi bi-circle-half"></i></div>
-          </div>
+        <div class="row">
+          <div class="col-2">Mon</div>
+          <div class="col-2"><i class="bi bi-cloud-sun"></i></div>
+          <div class="col-2">76°</div>
+          <div class="col-2">58°</div>
+          <div class="col-2">20%</div>
+          <div class="col-2"><i class="bi bi-circle-half"></i></div>
+        </div>
+        <div class="row">
+          <div class="col-2">Tue</div>
+          <div class="col-2"><i class="bi bi-cloud-lightning-rain"></i></div>
+          <div class="col-2">76°</div>
+          <div class="col-2">57°</div>
+          <div class="col-2">80%</div>
+          <div class="col-2"><i class="bi bi-circle-half"></i></div>
+        </div>
+        <div class="row">
+          <div class="col-2">Wed</div>
+          <div class="col-2"><i class="bi bi-cloud-lightning-rain"></i></div>
+          <div class="col-2">78°</div>
+          <div class="col-2">57°</div>
+          <div class="col-2">50%</div>
+          <div class="col-2"><i class="bi bi-circle-half"></i></div>
+        </div>
+        <div class="row">
+          <div class="col-2">Thu</div>
+          <div class="col-2"><i class="bi bi-cloud-lightning-rain"></i></div>
+          <div class="col-2">78°</div>
+          <div class="col-2">56°</div>
+          <div class="col-2">50%</div>
+          <div class="col-2"><i class="bi bi-circle-half"></i></div>
+        </div>
+        <div class="row">
+          <div class="col-2">Fri</div>
+          <div class="col-2"><i class="bi bi-cloud-lightning"></i></div>
+          <div class="col-2">76°</div>
+          <div class="col-2">55°</div>
+          <div class="col-2">30%</div>
+          <div class="col-2"><i class="bi bi-circle-half"></i></div>
         </div>
       </div>
     </div>
-    <script src= "src/app.js" ></script>
+    <a href="https://relaxed-murdock-1253b0.netlify.app/" target="_blank"
+      >Open-source code</a
+    >
+    <span>by Laura Sanz</span>
+    <script src="src copy/app.js"></script>
   </body>
 </html>
