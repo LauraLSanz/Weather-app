@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <title>WeatherApp🌤</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+<link rel="stylesheet" href="src/styles.css"/>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      
+
+        <form id="search-form">
+          <input
+          type= "text"
+            class="form-control"
+            placeholder="city"
+            autofocus="on"
+            id="search-text-input"
+          />
+         <input
+          type= "submit"
+          value= "🔍"
+          class= "🔍">
+        </form>
+        
+        <button id="currentlocation">Current Location</button>
+      
+
+        <h1 id="city">Mexico City</h1>
+        <h2 id="description">Partly Cloudy</h2>
+        <h3>
+          <i class="bi bi-cloud-sun"></i>
+        </h3>
+        
+        <h4 id="temp">24°</h4>
+       
+      <a href="#" class="btn" id="celsius-link" autofocus="on">C°</a>
+      <a href="#" class="btn" id="farenheit-link">F°</a>
+
+        <h5 id="day">Sunday</h5>
+        <h6 id="time">5:00pm</h6>
+        <div class="sunrise">
+          <i class="bi bi-sunrise"></i>7:17am <i class="bi bi-sunset"></i>8:04pm
+        </div>
+        
+
+        <div class="precipitation">
+          <span class="rain"><i class="bi bi-cloud-rain"></i>15%</span>
+          <span class="humidity"><i class="bi bi-moisture"></i><span id="humidity">39%</span></span>
+          <span class="wind"><i class="bi bi-wind"></i><span id="windspeed">0km/h</span></span>
+        </div>
+        <div class="box">
+          <div class="row days">
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2 high">High</div>
+            <div class="col-2 low">Low</div>
+            <div class="col-2 rainChance"><i class="bi bi-cloud-rain"></i></div>
+            <div class="col-2 moon"><i class="bi bi-moon"></i></div>
+          </div>
+          <div class="row">
+            <div class="col-2">Mon</div>
+            <div class="col-2"><i class="bi bi-cloud-sun"></i></div>
+            <div class="col-2">76°</div>
+            <div class="col-2">58°</div>
+            <div class="col-2">20%</div>
+            <div class="col-2"><i class="bi bi-circle-half"></i></div>
+          </div>
+          <div class="row">
+            <div class="col-2">Tue</div>
+            <div class="col-2"><i class="bi bi-cloud-lightning-rain"></i></div>
+            <div class="col-2">76°</div>
+            <div class="col-2">57°</div>
+            <div class="col-2">80%</div>
+            <div class="col-2"><i class="bi bi-circle-half"></i></div>
+          </div>
+          <div class="row">
+            <div class="col-2">Wed</div>
+            <div class="col-2"><i class="bi bi-cloud-lightning-rain"></i></div>
+            <div class="col-2">78°</div>
+            <div class="col-2">57°</div>
+            <div class="col-2">50%</div>
+            <div class="col-2"><i class="bi bi-circle-half"></i></div>
+          </div>
+          <div class="row">
+            <div class="col-2">Thu</div>
+            <div class="col-2"><i class="bi bi-cloud-lightning-rain"></i></div>
+            <div class="col-2">78°</div>
+            <div class="col-2">56°</div>
+            <div class="col-2">50%</div>
+            <div class="col-2"><i class="bi bi-circle-half"></i></div>
+          </div>
+          <div class="row">
+            <div class="col-2">Fri</div>
+            <div class="col-2"><i class="bi bi-cloud-lightning"></i></div>
+            <div class="col-2">76°</div>
+            <div class="col-2">55°</div>
+            <div class="col-2">30%</div>
+            <div class="col-2"><i class="bi bi-circle-half"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src= "src/app.js" ></script>
+  </body>
+</html>

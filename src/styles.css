@@ -1,0 +1,152 @@
+.container-fluid {
+  background: linear-gradient(180deg, #89f7fe 0%, #66a6ff 100%);
+  display: block;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: azure;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.hour {
+  display: block;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+  text-align: center;
+  color: azure;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 0px;
+  margin-top: 0%;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 250px;
+  padding: 0%;
+  margin: 0%;
+}
+h4 {
+  font-size: 100px;
+  padding: 0%;
+}
+h5 {
+  font-size: 50px;
+  padding: 0%;
+  margin-bottom: 0%;
+  margin-top: 10px;
+}
+h6 {
+  font-size: 25px;
+  margin-bottom: 19px;
+}
+.sunrise {
+  display: block;
+  text-align: center;
+  word-spacing: 45px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+.precipitation {
+  display: block;
+  text-align: center;
+  word-spacing: 45px;
+  margin-bottom: 45px;
+  font-size: 20px;
+}
+
+.form-control {
+  background: linear-gradient(180deg, #89f7fe 0%, #66a6ff 500%);
+  color: white;
+  border-radius: 50px;
+  border-color: transparent;
+  border-width: 0px;
+  display: block;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  max-width: 145px;
+  text-align: right;
+  position: relative;
+  top: 6px;
+  left: 406px;
+}
+.form-control::placeholder {
+  color: whitesmoke;
+  font-size: 14px;
+}
+
+.🔍 {
+  background: linear-gradient(180deg, #89f7fe 0%, #66a6ff 500%);
+  color: white;
+  border-radius: 50px;
+  border-color: transparent;
+  border-width: 0px;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: -25px;
+  left: 554px;
+}
+
+#currentlocation {
+  background: linear-gradient(180deg, #89f7fe 0%, #66a6ff 500%);
+  color: white;
+  border-radius: 50px;
+  border-color: transparent;
+  border-width: 0px;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: -19px;
+  left: 438px;
+  font-size: 12px;
+}
+
+.high,
+.low,
+.rainChance,
+.moon {
+  font-weight: bold;
+}
+.box {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 71px;
+}
+
+#celsius-link,
+#farenheit-link {
+  background: linear-gradient(180deg, #89f7fe 0%, #66a6ff 200%);
+  color: white;
+  border-radius: 100px;
+  border-width: 0px;
+  font-family: "Poppins", sans-serif;
+}
+#celsius-link {
+  position: relative;
+  display: inline-block;
+  top: -106px;
+  left: 127px;
+}
+#farenheit-link {
+  position: relative;
+  display: inline-block;
+  top: -67px;
+  left: 82px;
+}
